@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>MEDOS</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="Sponsor.html">Sponsor</a>
+        <a href="Sponsors.html">Sponsors</a>
+        <a href="SignUp.html">Sign Up</a>
+        <a href="Appointment.html">Book Appointment</a>
+        <a href="HospitalInventory.html">Search for Hospital Inventory</a>
+        <!-- <input type="text" placeholder="Search for Doctors"> -->
+        <form class="search_box">
+            <input type="text" placeholder="Search for doctors">
+            <button>SEARCH</button>
+        </form>
+    </nav>
+
+    <div class="main">
+        <form onsubmit="extract();" id="form">
+            <label for="AdharNumber">Adhar Number:</label><br>
+            <input type="text" id="AdharNumber" name="AdharNumber"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+    <script src="SignUp.js"></script>
+</body>
+
+</html>

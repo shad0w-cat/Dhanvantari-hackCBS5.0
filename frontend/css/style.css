@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+
+}
+
+form.search_box {
+  margin-top: 20px;
+  float: right;
+  margin-right: 100px;
+
+}
+
+input[type=text] {
+  /* width : 100%; */
+  padding: 7px;
+  border: none;
+  font-size: 16 px;
+  font-family: sans-serif;
+  /* border:1px solid #ccc; */
+  /* border-radius : 4px; */
+  /* box-sizing : border-box; */
+  /* margin-top : 8px;
+  margin-bottom : 16px; */
+  /* resize:verticle; */
+
+}
+
+button {
+  float: right;
+  background: rgb(23, 55, 82);
+  color: white;
+  border-radius: 0 9px 9px 0;
+  cursor: pointer;
+  position: relative;
+  padding: 6px;
+  font-family: sans-serif;
+  border: none;
+  font-size: 15px;
+
+}
+
+.appointmentform {
+  border: 3px double rgb(40, 43, 45);
+  background-color: rgba(103, 126, 144, 0.5);
+  border-radius: 60px;
+  padding: 15px;
+  text-align: center;
+}
+
+.wrapper .sidebar {
+  background: rgb(5, 68, 104);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+
+body {
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+header {
+  padding: 20px;
+  background-color: rgb(23, 55, 82);
+}
+
+nav {
+  position: relative;
+  background-color: rgb(81, 128, 167);
+  overflow: hidden;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  float: left;
+  color: white;
+}
+
+div#main {
+  /* background-image : url(../images/BG1.jpg);  */
+  background-repeat: no-repeat;
+  background-attachment: fixe7d;
+  background-size: cover;
+  /* background-color: white; */
+  /* text-align: center; */
+}
+
+/* body{
+  
+  
+
+} */
+
+h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+section:nth-child(even) {
+  background-color: rgb(241, 241, 241);
+}
+
+section {
+  min-height: 80vh;
+}
+
+video {
+  padding: 10px;
+}
+
+iframe {
+  height: 75vh;
+}
+
+img {
+  padding: 10px;
+}
+
+section h5 {
+  margin: 40px;
+}
+
+footer {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+footer a {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  float: left;
+  color: white;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: sticky;
+  height: 900px;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+#appointmentForm p {
+  margin: 1%;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>MEDOS</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="Sponsor.html">Sponsor</a>
+        <a href="Sponsors.html">Sponsors</a>
+        <a href="SignUp.html">Sign Up</a>
+        <a href="Appointment.html">Book Appointment</a>
+        <a href="HospitalInventory.html">Search for Hospital Inventory</a>
+        <!-- <input type="text" placeholder="Search for Doctors"> -->
+        <form class="search_box">
+            <input type="text" placeholder="Search" id="searchB">
+            <button>SEARCH</button>
+        </form>
+    </nav>
+
+    <script src="main.js"></script>
+
+    <div>
+        <main>
+            <p>
+            <h2>Get Appointment</h2>
+            </p>
+            <div class="appointmentform">
+                <form onsubmit="Doctors();" id="appointmentForm">
+                    <p>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname">
+                    </p>
+
+                    <p>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname">
+                    </p>
+
+                    <p>
+                        <label for="age">Age:</label>
+                        <input type="text" id="Age" name="Age">
+                    </p>
+                    <p>
+                        <label for="gender">Gender:</label>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="html">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="css">Female</label>
+                    </p>
+
+                    <p>
+                        <label for="prescriptionFile">Upload Your Prescription File:</label>
+                        <input type="file" id="myFile" name="prescriptionFile"><br>
+                    </p>
+
+                    <input type="submit">
+                    <!-- on submit this form will search for Doctors based on the filter of age group and disease -->
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+            <footer>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">&copy;&nbsp;| MEDOS</a>
+            </footer>
+        </main>
+    </div>
+
+</body>
+
+</html>
