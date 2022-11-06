@@ -20,7 +20,8 @@ app.use(
         extended: true,
     })
 );
-
+// app.use('/static', express.static(path.join(__dirname, 'frontend/html')))
+app.use(express.static('frontend'))
 app.get('/', (req, res) => {
     res.status(200).send({ message: 'ok' })
 })
