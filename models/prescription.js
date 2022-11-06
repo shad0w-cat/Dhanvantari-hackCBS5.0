@@ -6,17 +6,16 @@ module.exports = function (sequelize, DataTypes) {
     "prescriptions",
     {
       presNum: {
-        autoIncrement: true,
+        defaultValue: DataTypes.UUIDV4,
         type: DataTypes.UUID,
         allowNull: false,
         primaryKey: true,
       },
       appNum: {
-        autoIncrement: true,
-        type: DataTypes.INTEGER,
+        type: DataTypes.UUID,
         allowNull: false,
         references: {
-          model: appointments,
+          model: 'appointments',
           key: "appNum",
         },
       },

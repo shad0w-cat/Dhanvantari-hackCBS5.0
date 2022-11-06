@@ -1,14 +1,27 @@
 * {
   box-sizing: border-box;
   margin: 0px;
+}
 
+html {
+  overflow: hidden;
+}
+
+#main {
+  height: 84vh;
+  overflow: auto;
 }
 
 form.search_box {
-  margin-top: 20px;
-  float: right;
-  margin-right: 100px;
+  /* margin-top: 20px; */
+  /* float: right; */
+  margin-right: 3em;
+}
 
+form.search_box>input {
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: -1em;
 }
 
 input[type=text] {
@@ -27,13 +40,13 @@ input[type=text] {
 }
 
 button {
+  padding: 10px;
   float: right;
   background: rgb(23, 55, 82);
   color: white;
   border-radius: 0 9px 9px 0;
   cursor: pointer;
   position: relative;
-  padding: 6px;
   font-family: sans-serif;
   border: none;
   font-size: 15px;
@@ -86,9 +99,15 @@ header {
 }
 
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
   position: relative;
   background-color: rgb(81, 128, 167);
   overflow: hidden;
+  border-radius: 10px;
 }
 
 nav a {
@@ -143,20 +162,6 @@ section h5 {
   margin: 40px;
 }
 
-footer {
-  background-color: #333;
-  overflow: hidden;
-  text-align: center;
-
-}
-
-footer a {
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-  float: left;
-  color: white;
-}
 
 li a:hover {
   background-color: #111;

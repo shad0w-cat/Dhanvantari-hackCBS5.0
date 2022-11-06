@@ -5,20 +5,19 @@ module.exports = function (sequelize, DataTypes) {
     "appointments",
     {
       appNum: {
-        autoIncrement: true,
+        defaultValue: DataTypes.UUIDV4,
         type: DataTypes.UUID,
         allowNull: false,
         primaryKey: true,
       },
       tokenNum: {
-        autoIncrement: true,
         type: DataTypes.INTEGER,
       },
       userId: {
         type: DataTypes.UUID,
         allowNull: false,
         references: {
-          model: users,
+          model: 'users',
           key: "userId",
         },
       },
@@ -56,7 +55,6 @@ module.exports = function (sequelize, DataTypes) {
           using: "BTREE",
           fields: [{ name: "tokenNum" }],
         },
-        {},
       ],
     }
   );
